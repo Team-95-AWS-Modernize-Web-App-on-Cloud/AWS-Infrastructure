@@ -4,16 +4,17 @@ data:
     - groups:
       - system:bootstrappers
       - system:nodes
-      rolearn: arn:aws:iam::339712798256:role/eksctl-simple-jwt-api-nodegroup-ng-NodeInstanceRole-HAdyco0uRXi7
+      rolearn: arn:aws:iam::339712798256:role/eksctl-Team95-EKS-Cluster-nodegrou-NodeInstanceRole-fP4n7Hy8DDDW
       username: system:node:{{EC2PrivateDNSName}}
+    
     - groups:
       - system:masters
-      rolearn: arn:aws:iam::339712798256:role/AWS_Infra/ci-cd-codepipeline.cfn.yml
+      rolearn: arn:aws:iam::339712798256:role/ModernizeWebAppDeployCBKubectlRole
       username: build
 kind: ConfigMap
 metadata:
-  creationTimestamp: "2024-03-12T03:21:56Z"
+  creationTimestamp: "2024-05-25T09:52:39Z"
   name: aws-auth
   namespace: kube-system
-  resourceVersion: "1245"
-  uid: 20dde97e-ac4a-4408-9d2d-9e3217caa4a2
+  resourceVersion: "1238"
+  uid: cdfc80fb-828a-4c6d-ae3c-be0d3fa96422
