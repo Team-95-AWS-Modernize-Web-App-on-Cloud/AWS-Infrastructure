@@ -1,0 +1,12 @@
+{
+    "Version": "2012-10-17",
+    "Statement":[{
+        "Effect": "Allow",
+        "Action": ["eks:Describe*", "ssm:GetParameters"],
+        "Resource":"*"
+    },
+    {
+        "Effect": "Allow",
+        "Action": ["ssm:GetParameter"],
+        "Resource":"arn:aws:ssm:us-east-2:339712798256:parameter/myPrivateKey"
+}]}
